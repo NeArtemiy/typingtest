@@ -12,8 +12,11 @@ let textWriting = {
     ]
 };
 
-let arr_en = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
-let arr_ru = ['а', 'б', 'в', 'г', 'д', 'е', 'ё', 'ж', 'з', 'и', 'й', 'к', 'л', 'м', 'н', 'о', 'п', 'р', 'с', 'т', 'у', 'ф', 'х', 'ц', 'ч', 'ш', 'щ', 'э', 'ю', 'я'];
+let languageAlpabet = {
+    en: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'],
+    ru: ['а', 'б', 'в', 'г', 'д', 'е', 'ё', 'ж', 'з', 'и', 'й', 'к', 'л', 'м', 'н', 'о', 'п', 'р', 'с', 'т', 'у', 'ф', 'х', 'ц', 'ч', 'ш', 'щ', 'э', 'ю', 'я'],
+}
+
 let wrong = 0;
 let writeWord = 0;
 let taimer = 0;
@@ -48,6 +51,7 @@ function setText() {
     language = slider.status ? 'en' : 'ru';
     let indexText = Math.floor(Math.random() * textWriting[language].length);
     let textObj = textWriting[language][indexText];
+
     for (let i = 0; i < textObj.length; i++) {
         let textSpan = document.createElement('span');
         textSpan.classList.add('text-item');
@@ -58,54 +62,47 @@ function setText() {
         }
         text.append(textSpan);
     }
+
     text.firstChild.classList.add('text-active', 'text-zoom');
     writeWord = 0;
     wrong = 0;
     taimer = 0;
     document.querySelector('.item-speed').innerHTML = 0;
     document.querySelector('.writing').innerHTML = 0;
-    document.querySelector('.accuracy').innerHTML = 0;
-    listenerText()
+    document.querySelector('.accuracy').innerHTML = 100;
 }
 
-function analyticDate()
-{
+function analyticDate() {
     taimer += 1;
     document.querySelector('.item-speed').innerHTML = ((writeWord / taimer) * 60).toFixed(0);
 }
 
 function listenerText() {
-    
     setInterval(analyticDate, 1000);
-    document.addEventListener('keydown', (e) => {
+    document.addEventListener('keyup', (e) => {
         let obj = Object.values(text.children)
         let zoom = text.querySelector('.text-zoom');
         let index = obj.indexOf(zoom);
-
-        if (e.key == zoom.innerHTML) 
-        {
-            console.log('yes')
+        console.log(e.keyCode)
+        if (e.key == zoom.innerHTML) {
             writeWord++;
             document.querySelector('.writing').innerHTML = (writeWord / (text.children.length / 100)).toFixed(0);
             zoom.classList.add('text-desebled');
             zoom.classList.remove('text-active', 'text-zoom', 'text-wrong');
             text.children[index + 1].classList.add('text-active', 'text-zoom');
-        } 
-        else if (e.key == 'Shift' || e.key == 'Alt' || e.key == 'Control') {} 
-        else if (slider.status == true && arr_ru.includes((e.key).toLowerCase()))
-        {
-           alert('Поменяй раскладку');
         }
-        else if (slider.status == false && arr_en.includes((e.key).toLowerCase()))
-        {
-           alert('Поменяй раскладку');
-        }
-        else {
+
+        else if (slider.status == true && languageAlpabet.ru.includes((e.key).toLowerCase())) {
+            alert('Поменяй раскладку');
+        } else if (slider.status == false && languageAlpabet.en.includes((e.key).toLowerCase())) {
+            alert('Поменяй раскладку');
+        } else {
             wrong++;
             document.querySelector('.accuracy').innerHTML = (100 - (wrong / (text.children.length / 100))).toFixed(1);
             zoom.classList.remove('text-active');
             zoom.classList.add('text-wrong');
         }
+
     })
 }
 
@@ -115,4 +112,5 @@ document.querySelector('.app__btn').addEventListener('click', () => {
 document.querySelector('.pop-up__btn').addEventListener('click', () => {
     document.querySelector('.pop-up').remove()
     setText()
+    listenerText()
 })
