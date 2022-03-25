@@ -4,27 +4,27 @@ let textWriting = {
 
         'What gave me the most uneasiness was, not to know what they thought of me; however, I think I heard the word pretty two or three times: but I sure I very distinctly heard that of awkward; and that must be very true, for she that said so is a relation, and an intimate friend of Mamma',
 
-        'After supper, they all sat down to cards. I sat next Mamma. I dont know how it happened, but I fell asleep immediately. A loud laugh awoke me. I dont know whether I was the object of it; but I believe I was. Mamma gave me leave to retire, which pleasd me much. Only think, it was then past eleven! Adieu, my dear Sophy!',
+        'After supper, they all sat down to cards. I sat next Mamma. I dont know how it happened, but I fell asleep immediately. A loud laugh awoke me. I dont know whether I was the object of it; but I believe I was. Mamma gave me leave to retire, which pleasd me much. Only think, it was then past eleven! Adieu, my dear Sophy! ',
 
-        'The smell of the liver searing in the pan is heavy in the back of my throat, even through the bacon grease Pop dribbled on it first. When Pop plates it, the liver smells, but the gravy he made to slather on it pools in a little heart around the meat, and I wonder if Pop did that on purpose.',
+        'The smell of the liver searing in the pan is heavy in the back of my throat, even through the bacon grease Pop dribbled on it first. When Pop plates it, the liver smells, but the gravy he made to slather on it pools in a little heart around the meat, and I wonder if Pop did that on purpose. ',
 
-        'I shook my head because it seemed like what she expected from me. But I liked most of the things Pop did, liked the way he stood when he spoke, like the way he combed his hair back straight from his face and slicked it down so he looked like an Indian in the books we read in school on the Choctaw and Creek, liked the way',
+        'I shook my head because it seemed like what she expected from me. But I liked most of the things Pop did, liked the way he stood when he spoke, like the way he combed his hair back straight from his face and slicked it down so he looked like an Indian in the books we read in school on the Choctaw and Creek, liked the way ',
 
-        'It was the first time I could remember they were depending on Leonie to look after me. After Michael left with Big Joseph, it felt weird to sit across the table from Leonie and make a fried potato sandwich while she stared off into space and crossed her legs and kicked her feet, let cigarette smoke seep out of her lips and wreathe her head like a veil.'
+        'It was the first time I could remember they were depending on Leonie to look after me. After Michael left with Big Joseph, it felt weird to sit across the table from Leonie and make a fried potato sandwich while she stared off into space and crossed her legs and kicked her feet, let cigarette smoke seep out of her lips and wreathe her head like a veil. '
     ],
 
     ru: [
-        'Тысячи лет назад люди научились пользоваться огнём. Первый, кто это сделал, вероятно, был сожжён соплеменниками на костре, разводить который сам и научил. Вероятно, его приняли за злодея, имевшего дело с духами, которых люди страшились.',
+        'Тысячи лет назад люди научились пользоваться огнём. Первый, кто это сделал, вероятно, был сожжён соплеменниками на костре, разводить который сам и научил. Вероятно, его приняли за злодея, имевшего дело с духами, которых люди страшились. ',
 
-        ' Такой первооткрыватель, человек непокорного духа стоит у истоков всех легенд, записанных человечеством с начала истории. Прометей был прикован к скале, хищные птицы раздирали его внутренности, потому что он украл у богов огонь. Адам был обречён на страдания, потому что вкусил плод древа познания.',
+        'Такой первооткрыватель, человек непокорного духа стоит у истоков всех легенд, записанных человечеством с начала истории. Прометей был прикован к скале, хищные птицы раздирали его внутренности, потому что он украл у богов огонь. Адам был обречён на страдания, потому что вкусил плод древа познания. ',
 
-        'Это древний конфликт. Люди приближались к истине, но всякий раз отвергали её, и цивилизации гибли одна за другой. Цивилизация — это движение к первостепенному праву личности. Вся жизнь дикаря проходит на глазах общества, она управляется племенными законами. Цивилизация — процесс освобождения человека от людей.',
+        'Это древний конфликт. Люди приближались к истине, но всякий раз отвергали её, и цивилизации гибли одна за другой. Цивилизация — это движение к первостепенному праву личности. Вся жизнь дикаря проходит на глазах общества, она управляется племенными законами. Цивилизация - процесс освобождения человека от людей. ',
 
-        'На земле ничто не дано человеку. Всё, что ему требуется, надо произвести. И он сталкивается с главным выбором: есть только два способа выжить — живя своим умом или паразитируя на уме других. Творец творит. Паразит всё получает из вторых рук. Творец стоит лицом к лицу с природой. Паразит прячется за посредником. ',
+        'На земле ничто не дано человеку. Всё, что ему требуется, надо произвести. И он сталкивается с главным выбором: есть только два способа выжить - живя своим умом или паразитируя на уме других. Творец творит. Паразит всё получает из вторых рук. Творец стоит лицом к лицу с природой. Паразит прячется за посредником. ',
 
         'А теперь посмотрите, чего добилось общество, построенное на принципах индивидуализма. Возьмите нас, нашу страну, благороднейшее из государств в человеческой истории, страну величайших достижений, благополучия и свободы. Наша страна не строилась на принципе бескорыстного служения, жертвенности, самоотверженности или иных постулатах альтруизма. ',
 
-        'Ныне коллективизм — закон паразита, второсортного человека, древнее чудовище, сорвавшееся с цепи и опьяневшее от власти. Оно низвело людей до уровня невиданного ранее интеллектуального бесчестья. Оно разрослось до невероятных, беспрецедентных масштабов. Оно напоило умы ядом.'
+        'Ныне коллективизм - закон паразита, второсортного человека, древнее чудовище, сорвавшееся с цепи и опьяневшее от власти. Оно низвело людей до уровня невиданного ранее интеллектуального бесчестья. Оно разрослось до невероятных, беспрецедентных масштабов. Оно напоило умы ядом. '
     ]
 };
 
