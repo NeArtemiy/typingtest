@@ -94,7 +94,6 @@ function setText() {
     text.innerHTML = ''
     language = slider.status ? 'en' : 'ru';
     let indexText = Math.floor(Math.random() * textWriting[language].length);
-    indexText = 2;
     let textObj = textWriting[language][indexText];
 
     for (let i = 0; i < textObj.length; i++) {
