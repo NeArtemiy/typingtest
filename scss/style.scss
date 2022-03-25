@@ -17,6 +17,8 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #fff;
     user-select: none;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .container {
