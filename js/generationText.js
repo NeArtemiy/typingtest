@@ -1,13 +1,30 @@
 let textWriting = {
     en: [
-        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960 swith the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+        ' have yet no news for my dear friend. Mamma had a great deal of company at supper last night. Notwithstanding the strong inclination I had to make my observations, especially among the men, I was far from being entertained. The whole company could not keep their eyes from me',
 
-        'Called real sense some burst removal concluded suffer justice blushes needed doors again offended extent. Sure amiable prepare months whether imprudence dining enjoyed our believed maids prevailed chiefly drift doubt motionless. Inhabit forty remaining through ladies find assure why find afraid since needed remainder gentleman settling forbade them. Abode raptures ignorant. Excellent own narrow without lived manor northward may is behind offended prospect above mistake rent had eagerness.',
+        'What gave me the most uneasiness was, not to know what they thought of me; however, I think I heard the word pretty two or three times: but I sure I very distinctly heard that of awkward; and that must be very true, for she that said so is a relation, and an intimate friend of Mamma',
+
+        'After supper, they all sat down to cards. I sat next Mamma. I dont know how it happened, but I fell asleep immediately. A loud laugh awoke me. I dont know whether I was the object of it; but I believe I was. Mamma gave me leave to retire, which pleasd me much. Only think, it was then past eleven! Adieu, my dear Sophy!',
+
+        'The smell of the liver searing in the pan is heavy in the back of my throat, even through the bacon grease Pop dribbled on it first. When Pop plates it, the liver smells, but the gravy he made to slather on it pools in a little heart around the meat, and I wonder if Pop did that on purpose.',
+
+        'I shook my head because it seemed like what she expected from me. But I liked most of the things Pop did, liked the way he stood when he spoke, like the way he combed his hair back straight from his face and slicked it down so he looked like an Indian in the books we read in school on the Choctaw and Creek, liked the way',
+
+        'It was the first time I could remember they were depending on Leonie to look after me. After Michael left with Big Joseph, it felt weird to sit across the table from Leonie and make a fried potato sandwich while she stared off into space and crossed her legs and kicked her feet, let cigarette smoke seep out of her lips and wreathe her head like a veil.'
     ],
-    ru: [
-        'Склонитеся Те Предает тут оставляешь дан нашего Божеским Прилеплюсь возжженном Укрепляешь Храбрость. неумытный оне лов сломить Проникнул любишь Умом лучезарна. стезею взмахом Предает алых Мудрый страсть. хижине простираем защищаюсь скудеет всесильный прекрасной Нее тон. Простых хотел боится насажденно кроток народов паряща хижине вершинах траву Запечатлев лиц трубишь плеск Преплывать прекрасной. ',
 
-        'Фурии дом Чел Се темнее горящие озаренья изнуренна наши На буйности дальнейшие. Хор Проводит нем Дна дивились духи уму колебав злом Славе пор. алкаем носит бренной Сии Уже. лира Петь покорил приношу та Что зародышем Упование был воскуренну утешитель поет. взрос знают живот избавляя цветов вид Полн Вашу обители Собою низложился мужествен Или атмосферу Сына вас Невинных. '
+    ru: [
+        'Тысячи лет назад люди научились пользоваться огнём. Первый, кто это сделал, вероятно, был сожжён соплеменниками на костре, разводить который сам и научил. Вероятно, его приняли за злодея, имевшего дело с духами, которых люди страшились.',
+
+        ' Такой первооткрыватель, человек непокорного духа стоит у истоков всех легенд, записанных человечеством с начала истории. Прометей был прикован к скале, хищные птицы раздирали его внутренности, потому что он украл у богов огонь. Адам был обречён на страдания, потому что вкусил плод древа познания.',
+
+        'Это древний конфликт. Люди приближались к истине, но всякий раз отвергали её, и цивилизации гибли одна за другой. Цивилизация — это движение к первостепенному праву личности. Вся жизнь дикаря проходит на глазах общества, она управляется племенными законами. Цивилизация — процесс освобождения человека от людей.',
+
+        'На земле ничто не дано человеку. Всё, что ему требуется, надо произвести. И он сталкивается с главным выбором: есть только два способа выжить — живя своим умом или паразитируя на уме других. Творец творит. Паразит всё получает из вторых рук. Творец стоит лицом к лицу с природой. Паразит прячется за посредником. ',
+
+        'А теперь посмотрите, чего добилось общество, построенное на принципах индивидуализма. Возьмите нас, нашу страну, благороднейшее из государств в человеческой истории, страну величайших достижений, благополучия и свободы. Наша страна не строилась на принципе бескорыстного служения, жертвенности, самоотверженности или иных постулатах альтруизма. ',
+
+        'Ныне коллективизм — закон паразита, второсортного человека, древнее чудовище, сорвавшееся с цепи и опьяневшее от власти. Оно низвело людей до уровня невиданного ранее интеллектуального бесчестья. Оно разрослось до невероятных, беспрецедентных масштабов. Оно напоило умы ядом.'
     ]
 };
 
@@ -15,13 +32,12 @@ let languageAlpabet = {
     en: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'],
     ru: ['а', 'б', 'в', 'г', 'д', 'е', 'ё', 'ж', 'з', 'и', 'й', 'к', 'л', 'м', 'н', 'о', 'п', 'р', 'с', 'т', 'у', 'ф', 'х', 'ц', 'ч', 'ш', 'щ', 'э', 'ю', 'я'],
 }
-let trueKeyCode = [192, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 189, 187, 220, 81, 87, 69, 82, 84, 89, 85, 73, 79, 80, 219, 221, 65, 83, 68, 70, 71, 72, 74, 75, 76, 186, 222, 90, 80, 67, 86, 66, 78, 77, 188, 190, 191, 32];
+let trueKeyCode = [192, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 189, 187, 220, 81, 87, 69, 82, 84, 89, 85, 73, 79, 80, 219, 221, 65, 83, 68, 70, 71, 72, 74, 75, 76, 186, 222, 90, 80, 67, 86, 66, 78, 77, 188, 190, 191];
 
 let wrong = 0;
 let writeWord = 0;
 let taimer = 0;
 
-var pause;
 let text = document.querySelector('.app__text');
 
 let slider = {
@@ -33,10 +49,31 @@ let slider = {
 }
 
 let labels = [];
+
 let wrongGraphic = [];
+
 let speedGraphic = [];
 
-
+const data = {
+    labels: labels,
+    datasets: [{
+            label: 'speed',
+            fill: true,
+            yAxisID: 'speed',
+            pointBackgroundColor: '#7940FF',
+            backgroundColor: 'rgba(136, 103, 212, 0.10)',
+            borderColor: '#7940FF',
+            data: speedGraphic,
+        },
+        {
+            yAxisID: 'wrong',
+            label: 'wrong',
+            backgroundColor: '#D46767',
+            borderColor: '#D46767',
+            data: wrongGraphic,
+        },
+    ]
+};
 
 slider.obj.addEventListener('click', () => {
     if (slider.status) {
@@ -57,6 +94,7 @@ function setText() {
     text.innerHTML = ''
     language = slider.status ? 'en' : 'ru';
     let indexText = Math.floor(Math.random() * textWriting[language].length);
+    indexText = 2;
     let textObj = textWriting[language][indexText];
 
     for (let i = 0; i < textObj.length; i++) {
@@ -80,20 +118,20 @@ function setText() {
 }
 
 function analyticDate() {
-    if (pause) {
-        taimer += 1;
-        let score = ((writeWord / taimer) * 60).toFixed(0)
-        document.querySelector('.item-speed').innerHTML = score;
-        labels.push(taimer)
-        speedGraphic.push(score)
-        wrongGraphic.push(wrong)
-    }
+    taimer += 1;
+    let score =  ((writeWord / taimer) * 60).toFixed(0)
+    document.querySelector('.item-speed').innerHTML = score;
+    labels.push(taimer)
+    speedGraphic.push(score)
+    wrongGraphic.push(wrong)
 }
 
 function listenerText() {
     let interval = setInterval(analyticDate, 1000);
+
     document.addEventListener('keyup', (e) => {
         if (writeWord + 1 != text.children.length) {
+            console.log(writeWord, text.children.length)
             let obj = Object.values(text.children)
             let zoom = text.querySelector('.text-zoom');
             let index = obj.indexOf(zoom);
@@ -114,36 +152,14 @@ function listenerText() {
                 zoom.classList.add('text-wrong');
             }
         } else {
-            pause = false;
-            document.querySelector('.app__panel-slider').style.display = 'none';
-            document.querySelector('.app__panel').style.justifyContent = 'center';
-            getAnalytics()
+            getAnalytics(interval)
         }
     })
 }
 
-function getAnalytics() {
+function getAnalytics(interval) {
+    clearInterval(interval)
     text.innerHTML = '<canvas id="myChart" height="100px"></canvas>'
-    const data = {
-        labels: labels,
-        datasets: [{
-                label: 'speed',
-                fill: true,
-                yAxisID: 'speed',
-                pointBackgroundColor: '#7940FF',
-                backgroundColor: 'rgba(136, 103, 212, 0.10)',
-                borderColor: '#7940FF',
-                data: speedGraphic,
-            },
-            {
-                yAxisID: 'wrong',
-                label: 'wrong',
-                backgroundColor: '#D46767',
-                borderColor: '#D46767',
-                data: wrongGraphic,
-            },
-        ]
-    };
     const myChart = new Chart(
         document.getElementById('myChart'),
         config = {
@@ -161,9 +177,9 @@ function getAnalytics() {
                         title: {
                             display: true,
                             text: 'wrong',
-                            font: {
+                            font:{
                                 family: 'Roboto',
-                                size: 14,
+                                size:14,
                                 weight: 400,
                             },
                             color: 'rgba(212, 103, 103, 0.8)'
@@ -171,17 +187,15 @@ function getAnalytics() {
                         position: 'right',
                         grid: {
                             drawOnChartArea: false,
-                        },
-                        suggestedMax: 15,
-                        suggestedMin: 0,
+                        }
                     },
                     speed: {
                         title: {
                             display: true,
                             text: 'speed',
-                            font: {
+                            font:{
                                 family: 'Roboto',
-                                size: 14,
+                                size:14,
                                 weight: 400,
                             },
                             color: 'rgba(136, 103, 212, 0.8)'
@@ -197,27 +211,15 @@ function getAnalytics() {
             }
         }
     );
-
 }
 
 
 
 document.querySelector('.app__btn').addEventListener('click', () => {
-    pause = true;
-    labels = [];
-    wrongGraphic = [];
-    speedGraphic = [];
-
-    let panelSlider = document.querySelector('.app__panel-slider')
-    if (getComputedStyle(panelSlider).display == 'none')
-    {
-        panelSlider.style.display = 'flex';
-        document.querySelector('.app__panel').style.justifyContent = 'space-between';
-    }
     setText();
+
 })
 document.querySelector('.pop-up__btn').addEventListener('click', () => {
-    pause = true;
     document.querySelector('.pop-up').remove()
     setText()
     listenerText()
