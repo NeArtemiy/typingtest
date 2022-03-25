@@ -1,7 +1,7 @@
 let textWriting = {
     en: [
         'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960 swith the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-        
+
         'Called real sense some burst removal concluded suffer justice blushes needed doors again offended extent. Sure amiable prepare months whether imprudence dining enjoyed our believed maids prevailed chiefly drift doubt motionless. Inhabit forty remaining through ladies find assure why find afraid since needed remainder gentleman settling forbade them. Abode raptures ignorant. Excellent own narrow without lived manor northward may is behind offended prospect above mistake rent had eagerness.',
     ],
     ru: [
@@ -15,7 +15,7 @@ let languageAlpabet = {
     en: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'],
     ru: ['а', 'б', 'в', 'г', 'д', 'е', 'ё', 'ж', 'з', 'и', 'й', 'к', 'л', 'м', 'н', 'о', 'п', 'р', 'с', 'т', 'у', 'ф', 'х', 'ц', 'ч', 'ш', 'щ', 'э', 'ю', 'я'],
 }
-let trueKeyCode = [192, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 189, 187, 220, 81, 87, 69, 82, 84, 89, 85, 73, 79, 80, 219, 221, 65, 83, 68, 70, 71, 72, 74, 75, 76, 186, 222, 90, 80, 67, 86, 66, 78, 77, 188, 190, 191];
+let trueKeyCode = [192, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 189, 187, 220, 81, 87, 69, 82, 84, 89, 85, 73, 79, 80, 219, 221, 65, 83, 68, 70, 71, 72, 74, 75, 76, 186, 222, 90, 80, 67, 86, 66, 78, 77, 188, 190, 191, 32];
 
 let wrong = 0;
 let writeWord = 0;
