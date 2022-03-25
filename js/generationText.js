@@ -1,10 +1,9 @@
 let textWriting = {
     en: [
         'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960 swith the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+        
         'Called real sense some burst removal concluded suffer justice blushes needed doors again offended extent. Sure amiable prepare months whether imprudence dining enjoyed our believed maids prevailed chiefly drift doubt motionless. Inhabit forty remaining through ladies find assure why find afraid since needed remainder gentleman settling forbade them. Abode raptures ignorant. Excellent own narrow without lived manor northward may is behind offended prospect above mistake rent had eagerness.',
-        'text',
     ],
-
     ru: [
         'Склонитеся Те Предает тут оставляешь дан нашего Божеским Прилеплюсь возжженном Укрепляешь Храбрость. неумытный оне лов сломить Проникнул любишь Умом лучезарна. стезею взмахом Предает алых Мудрый страсть. хижине простираем защищаюсь скудеет всесильный прекрасной Нее тон. Простых хотел боится насажденно кроток народов паряща хижине вершинах траву Запечатлев лиц трубишь плеск Преплывать прекрасной. ',
 
@@ -22,6 +21,7 @@ let wrong = 0;
 let writeWord = 0;
 let taimer = 0;
 
+var pause;
 let text = document.querySelector('.app__text');
 
 let slider = {
@@ -33,31 +33,10 @@ let slider = {
 }
 
 let labels = [];
-
 let wrongGraphic = [];
-
 let speedGraphic = [];
 
-const data = {
-    labels: labels,
-    datasets: [{
-            label: 'speed',
-            fill: true,
-            yAxisID: 'speed',
-            pointBackgroundColor: '#7940FF',
-            backgroundColor: 'rgba(136, 103, 212, 0.10)',
-            borderColor: '#7940FF',
-            data: speedGraphic,
-        },
-        {
-            yAxisID: 'wrong',
-            label: 'wrong',
-            backgroundColor: '#D46767',
-            borderColor: '#D46767',
-            data: wrongGraphic,
-        },
-    ]
-};
+
 
 slider.obj.addEventListener('click', () => {
     if (slider.status) {
@@ -78,7 +57,6 @@ function setText() {
     text.innerHTML = ''
     language = slider.status ? 'en' : 'ru';
     let indexText = Math.floor(Math.random() * textWriting[language].length);
-    indexText = 2;
     let textObj = textWriting[language][indexText];
 
     for (let i = 0; i < textObj.length; i++) {
@@ -102,20 +80,20 @@ function setText() {
 }
 
 function analyticDate() {
-    taimer += 1;
-    let score =  ((writeWord / taimer) * 60).toFixed(0)
-    document.querySelector('.item-speed').innerHTML = score;
-    labels.push(taimer)
-    speedGraphic.push(score)
-    wrongGraphic.push(wrong)
+    if (pause) {
+        taimer += 1;
+        let score = ((writeWord / taimer) * 60).toFixed(0)
+        document.querySelector('.item-speed').innerHTML = score;
+        labels.push(taimer)
+        speedGraphic.push(score)
+        wrongGraphic.push(wrong)
+    }
 }
 
 function listenerText() {
     let interval = setInterval(analyticDate, 1000);
-
     document.addEventListener('keyup', (e) => {
         if (writeWord + 1 != text.children.length) {
-            console.log(writeWord, text.children.length)
             let obj = Object.values(text.children)
             let zoom = text.querySelector('.text-zoom');
             let index = obj.indexOf(zoom);
@@ -136,14 +114,36 @@ function listenerText() {
                 zoom.classList.add('text-wrong');
             }
         } else {
-            getAnalytics(interval)
+            pause = false;
+            document.querySelector('.app__panel-slider').style.display = 'none';
+            document.querySelector('.app__panel').style.justifyContent = 'center';
+            getAnalytics()
         }
     })
 }
 
-function getAnalytics(interval) {
-    clearInterval(interval)
+function getAnalytics() {
     text.innerHTML = '<canvas id="myChart" height="100px"></canvas>'
+    const data = {
+        labels: labels,
+        datasets: [{
+                label: 'speed',
+                fill: true,
+                yAxisID: 'speed',
+                pointBackgroundColor: '#7940FF',
+                backgroundColor: 'rgba(136, 103, 212, 0.10)',
+                borderColor: '#7940FF',
+                data: speedGraphic,
+            },
+            {
+                yAxisID: 'wrong',
+                label: 'wrong',
+                backgroundColor: '#D46767',
+                borderColor: '#D46767',
+                data: wrongGraphic,
+            },
+        ]
+    };
     const myChart = new Chart(
         document.getElementById('myChart'),
         config = {
@@ -161,9 +161,9 @@ function getAnalytics(interval) {
                         title: {
                             display: true,
                             text: 'wrong',
-                            font:{
+                            font: {
                                 family: 'Roboto',
-                                size:14,
+                                size: 14,
                                 weight: 400,
                             },
                             color: 'rgba(212, 103, 103, 0.8)'
@@ -171,15 +171,17 @@ function getAnalytics(interval) {
                         position: 'right',
                         grid: {
                             drawOnChartArea: false,
-                        }
+                        },
+                        suggestedMax: 15,
+                        suggestedMin: 0,
                     },
                     speed: {
                         title: {
                             display: true,
                             text: 'speed',
-                            font:{
+                            font: {
                                 family: 'Roboto',
-                                size:14,
+                                size: 14,
                                 weight: 400,
                             },
                             color: 'rgba(136, 103, 212, 0.8)'
@@ -195,15 +197,27 @@ function getAnalytics(interval) {
             }
         }
     );
+
 }
 
 
 
 document.querySelector('.app__btn').addEventListener('click', () => {
-    setText();
+    pause = true;
+    labels = [];
+    wrongGraphic = [];
+    speedGraphic = [];
 
+    let panelSlider = document.querySelector('.app__panel-slider')
+    if (getComputedStyle(panelSlider).display == 'none')
+    {
+        panelSlider.style.display = 'flex';
+        document.querySelector('.app__panel').style.justifyContent = 'space-between';
+    }
+    setText();
 })
 document.querySelector('.pop-up__btn').addEventListener('click', () => {
+    pause = true;
     document.querySelector('.pop-up').remove()
     setText()
     listenerText()
