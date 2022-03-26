@@ -61,7 +61,8 @@ body {
     max-height: 44px;
     height: 100%;
     cursor: pointer;
-    transition: 0.35s all ease-in-out;
+    transition: background-color 0.35s ease-in-out, filter 0.05s ease-in;
+    
 }
 
 .btn:hover {
@@ -70,7 +71,7 @@ body {
 }
 
 .btn:active {
-    filter: drop-shadow(0px 0px 11px #9B7BE6);
+    filter: drop-shadow(0px 0px 6px #9B7BE6);
 }
 
 .btn:hover .app__btn-img {
