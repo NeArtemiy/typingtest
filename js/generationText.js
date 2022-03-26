@@ -223,7 +223,7 @@ function getAnalytics() {
                         grid: {
                             drawOnChartArea: false,
                         },
-                        suggestedMax: 15,
+                        suggestedMax: 50,
                         suggestedMin: 0,
                     },
                     speed: {
