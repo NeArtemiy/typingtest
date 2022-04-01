@@ -102,7 +102,8 @@ function setText()
 }
 
 // Таймер (срабатывает раз в 1с)
-function analyticDate() {
+function analyticDate() 
+{
     if (pause) {
         taimer += 1;
 
@@ -117,7 +118,8 @@ function analyticDate() {
     }
 }
 
-function listenerText() {
+function listenerText() 
+{
     // Объявление таймера
     let interval = setInterval(analyticDate, 1000);
 
@@ -132,7 +134,8 @@ function listenerText() {
             let index = obj.indexOf(zoom);
 
             // Проверка вводимый буквы на правильность
-            if (e.key == zoom.innerHTML) 
+            if(e.key == 'Shift'){}
+            else if (e.key == zoom.innerHTML) 
             {
                 writeWord++;
                 // Выводит в статистику процент написанного текста
@@ -170,7 +173,8 @@ function listenerText() {
 }
 
 // Функция для вывода графика
-function getAnalytics() {
+function getAnalytics() 
+{
     text.innerHTML = '<canvas id="myChart" height="100px"></canvas>'
     const data = {
         // Значение по x
